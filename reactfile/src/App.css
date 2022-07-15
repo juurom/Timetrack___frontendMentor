@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@200&family=IBM+Plex+Mono:wght@100&family=Rubik:wght@300&display=swap');
+
+body{
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    background-color: hsl(226, 43%, 10%);
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 62.5%;
+}
+
+.wrapper{
+    height: 60vh;
+    padding: 20vh 15vw;
+    display: grid;
+    /*
+    grid-template-columns:
+        "profile work play study"
+        "profile exercise social selfcare";
+    */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.profile{
+    background-color:hsl(235, 46%, 20%);
+    grid-row: 1/3;
+    border-radius: 20px;
+}
+
+.user{
+    padding: 30px;
+    height: 70%;
+    box-sizing: border-box;
+    background-color:  hsl(246, 80%, 60%);
+    border-radius: 20px;
+}
+
+.repfor{
+    margin-top: 20%;
+    font-size: 1.1rem;
+}
+
+.name{
+    font-size: 2.4rem;
+}
+
+.pic{
+    height: 100px;
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-image: url(./images/image-jeremy.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.time{
+    padding: 10px 30px;
+    height: 30%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.time button{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.1rem;
+    width: 100%;
+    height: 33%;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: hsl(235, 45%, 61%);
+}
+
+.time button:hover{
+    color: white;
+}
+
+.tracktime{
+    position: relative;
+    background-color: grey;
+    border-radius: 20px;
+}
+
+.top{
+    position: absolute;
+    bottom: 0;
+    height: 80%;
+    width: 100%;
+    background-color:hsl(235, 46%, 20%);
+    border-radius: 15px;
+}
+
+.top:hover{
+    background-color:  hsl(235, 45%, 61%);
+    transition: all ease 0.3s 0s;
+}
+
+.title{
+    padding: 20px 30px;
+    font-size: 1.1rem;
+}
+
+.showntime{
+    padding: 10px 30px;
+}
+
+.current{
+    font-size: 2.4rem;
+}
+
+.previous{
+    font-size: 1.1rem;
+    color:  hsl(236, 100%, 87%);
+}
+
+
+
+.tracktime.Work{
+    background-color: hsl(15, 100%, 70%);
+    background-image: url(./images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+.tracktime.Play{
+    background-color: hsl(195, 74%, 62%);
+    background-image: url(./images/icon-play.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+.tracktime.Study{
+    background-color: hsl(348, 100%, 68%);
+    background-image: url(./images/icon-study.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+.tracktime.Exercise{
+    background-color: hsl(145, 58%, 55%);
+    background-image: url(./images/icon-exercise.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+.tracktime.Social{
+    background-color: hsl(264, 64%, 52%);
+    background-image: url(./images/icon-social.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+.tracktime.Self.Care{
+    background-color:  hsl(43, 84%, 65%);
+    background-image: url(./images/icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+
+
+.attribution{
+  width: 100%;
+  text-align: center;
+}
+
